@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3305BB752F7C7AEF009EE4A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305BB742F7C7AEF009EE4A9 /* ContentView.swift */; };
+		3305BB772F7C7AF1009EE4A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3305BB762F7C7AF1009EE4A9 /* Assets.xcassets */; };
+		3305BB7A2F7C7AF1009EE4A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3305BB792F7C7AF1009EE4A9 /* Preview Assets.xcassets */; };
+		3305BB852F7C7AF1009EE4A9 /* AyaMacAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305BB842F7C7AF1009EE4A9 /* AyaMacAppTests.swift */; };
+		3305BB8F2F7C7AF1009EE4A9 /* AyaMacAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305BB8E2F7C7AF1009EE4A9 /* AyaMacAppUITests.swift */; };
+		3305BB912F7C7AF1009EE4A9 /* AyaMacAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305BB902F7C7AF1009EE4A9 /* AyaMacAppUITestsLaunchTests.swift */; };
+		3305BB9E2F7C7B2E009EE4A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305BB9D2F7C7B2E009EE4A9 /* AppDelegate.swift */; };
+		3305BBA22F7C8844009EE4A9 /* SuggestionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305BBA12F7C8844009EE4A9 /* SuggestionWindow.swift */; };
+		3305BBA42F7C8D6A009EE4A9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305BBA32F7C8D6A009EE4A9 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3305BB812F7C7AF1009EE4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3305BB672F7C7AEF009EE4A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3305BB6E2F7C7AEF009EE4A9;
+			remoteInfo = AyaMacApp;
+		};
+		3305BB8B2F7C7AF1009EE4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3305BB672F7C7AEF009EE4A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3305BB6E2F7C7AEF009EE4A9;
+			remoteInfo = AyaMacApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3305BB6F2F7C7AEF009EE4A9 /* AyaMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AyaMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3305BB742F7C7AEF009EE4A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3305BB762F7C7AF1009EE4A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3305BB792F7C7AF1009EE4A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3305BB7B2F7C7AF1009EE4A9 /* AyaMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AyaMacApp.entitlements; sourceTree = "<group>"; };
+		3305BB802F7C7AF1009EE4A9 /* AyaMacAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyaMacAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3305BB842F7C7AF1009EE4A9 /* AyaMacAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyaMacAppTests.swift; sourceTree = "<group>"; };
+		3305BB8A2F7C7AF1009EE4A9 /* AyaMacAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyaMacAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3305BB8E2F7C7AF1009EE4A9 /* AyaMacAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyaMacAppUITests.swift; sourceTree = "<group>"; };
+		3305BB902F7C7AF1009EE4A9 /* AyaMacAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyaMacAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3305BB9D2F7C7B2E009EE4A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3305BBA12F7C8844009EE4A9 /* SuggestionWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionWindow.swift; sourceTree = "<group>"; };
+		3305BBA32F7C8D6A009EE4A9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3305BB6C2F7C7AEF009EE4A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3305BB7D2F7C7AF1009EE4A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3305BB872F7C7AF1009EE4A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3305BB662F7C7AEF009EE4A9 = {
+			isa = PBXGroup;
+			children = (
+				3305BB712F7C7AEF009EE4A9 /* AyaMacApp */,
+				3305BB832F7C7AF1009EE4A9 /* AyaMacAppTests */,
+				3305BB8D2F7C7AF1009EE4A9 /* AyaMacAppUITests */,
+				3305BB702F7C7AEF009EE4A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3305BB702F7C7AEF009EE4A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3305BB6F2F7C7AEF009EE4A9 /* AyaMacApp.app */,
+				3305BB802F7C7AF1009EE4A9 /* AyaMacAppTests.xctest */,
+				3305BB8A2F7C7AF1009EE4A9 /* AyaMacAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3305BB712F7C7AEF009EE4A9 /* AyaMacApp */ = {
+			isa = PBXGroup;
+			children = (
+				3305BBA32F7C8D6A009EE4A9 /* main.swift */,
+				3305BB9D2F7C7B2E009EE4A9 /* AppDelegate.swift */,
+				3305BBA12F7C8844009EE4A9 /* SuggestionWindow.swift */,
+				3305BB742F7C7AEF009EE4A9 /* ContentView.swift */,
+				3305BB762F7C7AF1009EE4A9 /* Assets.xcassets */,
+				3305BB7B2F7C7AF1009EE4A9 /* AyaMacApp.entitlements */,
+				3305BB782F7C7AF1009EE4A9 /* Preview Content */,
+			);
+			path = AyaMacApp;
+			sourceTree = "<group>";
+		};
+		3305BB782F7C7AF1009EE4A9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3305BB792F7C7AF1009EE4A9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3305BB832F7C7AF1009EE4A9 /* AyaMacAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3305BB842F7C7AF1009EE4A9 /* AyaMacAppTests.swift */,
+			);
+			path = AyaMacAppTests;
+			sourceTree = "<group>";
+		};
+		3305BB8D2F7C7AF1009EE4A9 /* AyaMacAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3305BB8E2F7C7AF1009EE4A9 /* AyaMacAppUITests.swift */,
+				3305BB902F7C7AF1009EE4A9 /* AyaMacAppUITestsLaunchTests.swift */,
+			);
+			path = AyaMacAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3305BB6E2F7C7AEF009EE4A9 /* AyaMacApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3305BB942F7C7AF1009EE4A9 /* Build configuration list for PBXNativeTarget "AyaMacApp" */;
+			buildPhases = (
+				3305BB6B2F7C7AEF009EE4A9 /* Sources */,
+				3305BB6C2F7C7AEF009EE4A9 /* Frameworks */,
+				3305BB6D2F7C7AEF009EE4A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AyaMacApp;
+			productName = AyaMacApp;
+			productReference = 3305BB6F2F7C7AEF009EE4A9 /* AyaMacApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3305BB7F2F7C7AF1009EE4A9 /* AyaMacAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3305BB972F7C7AF1009EE4A9 /* Build configuration list for PBXNativeTarget "AyaMacAppTests" */;
+			buildPhases = (
+				3305BB7C2F7C7AF1009EE4A9 /* Sources */,
+				3305BB7D2F7C7AF1009EE4A9 /* Frameworks */,
+				3305BB7E2F7C7AF1009EE4A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3305BB822F7C7AF1009EE4A9 /* PBXTargetDependency */,
+			);
+			name = AyaMacAppTests;
+			productName = AyaMacAppTests;
+			productReference = 3305BB802F7C7AF1009EE4A9 /* AyaMacAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3305BB892F7C7AF1009EE4A9 /* AyaMacAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3305BB9A2F7C7AF1009EE4A9 /* Build configuration list for PBXNativeTarget "AyaMacAppUITests" */;
+			buildPhases = (
+				3305BB862F7C7AF1009EE4A9 /* Sources */,
+				3305BB872F7C7AF1009EE4A9 /* Frameworks */,
+				3305BB882F7C7AF1009EE4A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3305BB8C2F7C7AF1009EE4A9 /* PBXTargetDependency */,
+			);
+			name = AyaMacAppUITests;
+			productName = AyaMacAppUITests;
+			productReference = 3305BB8A2F7C7AF1009EE4A9 /* AyaMacAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3305BB672F7C7AEF009EE4A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3305BB6E2F7C7AEF009EE4A9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3305BB7F2F7C7AF1009EE4A9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3305BB6E2F7C7AEF009EE4A9;
+					};
+					3305BB892F7C7AF1009EE4A9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3305BB6E2F7C7AEF009EE4A9;
+					};
+				};
+			};
+			buildConfigurationList = 3305BB6A2F7C7AEF009EE4A9 /* Build configuration list for PBXProject "AyaMacApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3305BB662F7C7AEF009EE4A9;
+			productRefGroup = 3305BB702F7C7AEF009EE4A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3305BB6E2F7C7AEF009EE4A9 /* AyaMacApp */,
+				3305BB7F2F7C7AF1009EE4A9 /* AyaMacAppTests */,
+				3305BB892F7C7AF1009EE4A9 /* AyaMacAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3305BB6D2F7C7AEF009EE4A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3305BB7A2F7C7AF1009EE4A9 /* Preview Assets.xcassets in Resources */,
+				3305BB772F7C7AF1009EE4A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3305BB7E2F7C7AF1009EE4A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3305BB882F7C7AF1009EE4A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3305BB6B2F7C7AEF009EE4A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3305BB9E2F7C7B2E009EE4A9 /* AppDelegate.swift in Sources */,
+				3305BBA22F7C8844009EE4A9 /* SuggestionWindow.swift in Sources */,
+				3305BBA42F7C8D6A009EE4A9 /* main.swift in Sources */,
+				3305BB752F7C7AEF009EE4A9 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3305BB7C2F7C7AF1009EE4A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3305BB852F7C7AF1009EE4A9 /* AyaMacAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3305BB862F7C7AF1009EE4A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3305BB912F7C7AF1009EE4A9 /* AyaMacAppUITestsLaunchTests.swift in Sources */,
+				3305BB8F2F7C7AF1009EE4A9 /* AyaMacAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3305BB822F7C7AF1009EE4A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3305BB6E2F7C7AEF009EE4A9 /* AyaMacApp */;
+			targetProxy = 3305BB812F7C7AF1009EE4A9 /* PBXContainerItemProxy */;
+		};
+		3305BB8C2F7C7AF1009EE4A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3305BB6E2F7C7AEF009EE4A9 /* AyaMacApp */;
+			targetProxy = 3305BB8B2F7C7AF1009EE4A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3305BB922F7C7AF1009EE4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3305BB932F7C7AF1009EE4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3305BB952F7C7AF1009EE4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AyaMacApp/AyaMacApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AyaMacApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MDAJ8Y33ZW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abcdev.AyaMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3305BB962F7C7AF1009EE4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AyaMacApp/AyaMacApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AyaMacApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MDAJ8Y33ZW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abcdev.AyaMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3305BB982F7C7AF1009EE4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MDAJ8Y33ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abcdev.AyaMacAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AyaMacApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AyaMacApp";
+			};
+			name = Debug;
+		};
+		3305BB992F7C7AF1009EE4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MDAJ8Y33ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abcdev.AyaMacAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AyaMacApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AyaMacApp";
+			};
+			name = Release;
+		};
+		3305BB9B2F7C7AF1009EE4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MDAJ8Y33ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abcdev.AyaMacAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AyaMacApp;
+			};
+			name = Debug;
+		};
+		3305BB9C2F7C7AF1009EE4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MDAJ8Y33ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abcdev.AyaMacAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AyaMacApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3305BB6A2F7C7AEF009EE4A9 /* Build configuration list for PBXProject "AyaMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3305BB922F7C7AF1009EE4A9 /* Debug */,
+				3305BB932F7C7AF1009EE4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3305BB942F7C7AF1009EE4A9 /* Build configuration list for PBXNativeTarget "AyaMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3305BB952F7C7AF1009EE4A9 /* Debug */,
+				3305BB962F7C7AF1009EE4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3305BB972F7C7AF1009EE4A9 /* Build configuration list for PBXNativeTarget "AyaMacAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3305BB982F7C7AF1009EE4A9 /* Debug */,
+				3305BB992F7C7AF1009EE4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3305BB9A2F7C7AF1009EE4A9 /* Build configuration list for PBXNativeTarget "AyaMacAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3305BB9B2F7C7AF1009EE4A9 /* Debug */,
+				3305BB9C2F7C7AF1009EE4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3305BB672F7C7AEF009EE4A9 /* Project object */;
+}
