@@ -4,6 +4,8 @@ Turn any text in macOS into AI-enhanced output — instantly, locally, and witho
 
 Aya is a system-level AI assistant that enables users to rewrite, translate, and summarize text across any application using a global hotkey — powered by a local multilingual model.
 
+Learn more about Tiny Aya: https://cohere.com/blog/cohere-labs-tiny-aya
+
 ---
 
 ## 🎥 Demo
