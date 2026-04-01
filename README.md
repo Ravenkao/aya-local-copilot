@@ -1,100 +1,143 @@
-# Guide to set up Tiny Aya locally and run it
+# Aya — Local AI Copilot for macOS
 
-**Mac only.** This CLI installs Tiny Aya GGUF from Hugging Face, picks a quantization based on your Mac’s specs, and runs an OpenAI-compatible API locally.
+Turn any text in macOS into AI-enhanced output — instantly, locally, and without leaving your workflow.
 
-**Prerequisite (optional):** The API runs the `llama-server` binary from [llama.cpp](https://github.com/ggml-org/llama.cpp). If it’s not installed, `aya-cli serve` will automatically run `brew install llama.cpp` on macOS when Homebrew is available. You can also install it yourself beforehand: `brew install llama.cpp`.
+Aya is a system-level AI assistant that enables users to rewrite, translate, and summarize text across any application using a global hotkey — powered by a local multilingual model.
 
-## 1. Create and activate a virtual environment
+---
 
-From the project root (`tiny-aya/`):
+## 🎥 Demo
 
-```bash
-uv venv
-source .venv/bin/activate
-```
+https://drive.google.com/file/d/1JuajpfD5qvZozoa-_jAfl_jq95zJB6AO/view?usp=sharing
 
-## 2. Install the CLI and dependencies
+---
 
-With the venv activated:
+## 🧠 Why I Built This
 
-```bash
-uv pip install -e .
-```
+Most AI writing tools today (e.g. Copilot, Grammarly) require:
 
-This installs `aya-cli` and its dependencies: `huggingface_hub`, `llama-cpp-python[server]`, and `typer`.
+- switching context between apps  
+- repetitive copy/paste workflows  
+- sending sensitive data to cloud APIs  
 
-## 3. Log in to Hugging Face (required for download)
+Aya explores a different interaction model:
 
-Tiny Aya is downloaded from Hugging Face. You must be logged in before running `aya-cli install`:
+> AI as a system-layer capability — not just another app.
 
-1. Get a token: [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
-2. Run: `hf auth login` and paste the token when prompted  
+This is especially important in **privacy-sensitive environments (e.g. B2B, enterprise workflows)** where sending internal content to external APIs is not acceptable.
 
-## 4. Check your Mac specs and recommended quantization (optional)
+---
 
-To see your Mac’s hardware and which quantization is recommended:
+## 🌍 Multilingual by Design (Tiny Aya)
 
-```bash
-aya-cli specs
-```
+Aya leverages Tiny Aya, a multilingual model developed by Cohere Labs.
 
-This prints RAM, chip, and the suggested quant (`q4_0`, `q4_k_m`, `q8_0`, `f16`, `bf16`) with a short reason.
+Tiny Aya supports **70+ languages**, including many low-resource languages, enabling:
 
-## 5. Download the model
+- Cross-language communication  
+- Multilingual rewriting  
+- Translation without external APIs  
 
-```bash
-aya-cli install
-```
+This makes Aya particularly valuable for:
 
-- The CLI checks that you’re on macOS and logged in to Hugging Face.
-- **Model:** You choose one of four Tiny Aya variants: **global**, **earth**, **fire**, or **water** (interactive prompt or `--model` / `-m`). Default is **global**.
-- **Quantization:** It then detects your Mac’s RAM and recommends a quantization (default is **q4_k_m**). You can: accept **[Y]**, use default **[n]**, or type a quant (e.g. `q8_0`) to override.
+- global teams  
+- international operations  
+- multilingual product environments  
 
-**Examples:**
+---
 
-- Interactive (model then quant): `aya-cli install`
-- Pick model and quant from CLI: `aya-cli install --model earth --quant q8_0` or `aya-cli install -m fire -q q4_k_m`
-- Only override quant: `aya-cli install --quant q8_0`
+## 🔒 Why Local (B2B Perspective)
 
-Models are saved under `~/.config/aya-assist/model/` and paths are stored in `~/.config/aya-assist/config.json`. You can install multiple variants; `aya-cli serve` lets you pick which one to run.
+Aya is built as a **local-first AI system**, which directly addresses enterprise concerns:
 
-## 6. Start the OpenAI-compatible API
+### Privacy & Compliance
+- No data leaves the device  
+- No third-party API calls  
+- Suitable for internal documents, Slack messages, Notion content  
 
-```bash
+### Cost Control
+- No per-token API cost  
+- Predictable infrastructure usage  
+
+### Reliability
+- Works offline  
+- No dependency on external services  
+
+> This design aligns with how many B2B teams evaluate AI adoption:  
+> **control, compliance, and predictability over convenience.**
+
+---
+
+## 🚀 Features
+
+- Fix grammar instantly  
+- Translate (multilingual, 70+ languages)  
+- Rewrite professionally  
+- Summarize text  
+- Global hotkey (`Cmd + Shift + .`)  
+- Works across any app (Notion, Slack, browser, etc.)  
+- Fully local inference (Tiny Aya via aya-cli)  
+
+---
+
+## ⚙️ How It Works
+
+1. User selects text in any application  
+2. Aya captures the selection via clipboard  
+3. Sends request to local AI model (`aya-cli`)  
+4. Receives structured output  
+5. Replaces or returns improved text  
+
+---
+
+## 🏗️ Architecture
+User Selection
+↓
+Clipboard Capture
+↓
+macOS Menu Bar App (Swift)
+↓
+Local API (aya-cli)
+↓
+Tiny Aya (llama.cpp backend)
+
+---
+
+## 🛠️ Tech Stack
+
+- Swift (macOS menu bar app)  
+- aya-cli (local LLM runtime)  
+- llama.cpp (model inference engine)  
+- Tiny Aya (multilingual model)  
+
+---
+
+## 📦 Setup
+
+### 1. Install aya-cli
+https://github.com/Cohere-Labs/aya-cli
+
+### 2. Run local server
 aya-cli serve
-```
 
-The API is at **http://localhost:8000/v1**. Chat UI: http://localhost:8000. Press Ctrl+C to stop.
+## 3. Run macOS app
+see demo
 
-**Server:** `aya-cli serve` runs the `llama-server` binary from [llama.cpp](https://github.com/ggml-org/llama.cpp). If `llama-server` is not on your PATH, the CLI will **auto-install** it via Homebrew on macOS (when `brew` is available). You can also install it yourself before running serve:
+## 📌 Current Limitations
+Clipboard-based interaction (paste simulation)
+No UI for mode switching yet
+Requires local model setup
 
-```bash
-brew install llama.cpp
-```
+## 🚧 Future Work
+Direct inline replacement (no paste simulation)
+Mode selection UI (rewrite / translate / summarize)
+Prompt customization
+Memory / personalization layer
+Performance optimization for real-time usage
+Packaging as installable macOS app
 
-If Homebrew isn’t installed or the auto-install fails, install llama.cpp manually or [build from source](https://github.com/ggml-org/llama.cpp).
+## 🙏 Acknowledgements
 
----
-
-## Quick reference
-
-| Step              | Command |
-|-------------------|--------|
-| (Optional) Install llama.cpp | `brew install llama.cpp` — or auto-installed on first `aya-cli serve` |
-| Create venv       | `uv venv` |
-| Activate venv     | `source .venv/bin/activate` |
-| Install CLI       | `pip install -e .` |
-| Log in to HF      | `hf auth login` |
-| Show Mac + recommendation | `aya-cli specs` |
-| Download model    | `aya-cli install` · or `aya-cli install -m earth -q q8_0` |
-| Run API           | `aya-cli serve` |
-
-**Paths:** Config: `~/.config/aya-assist/config.json`, models: `~/.config/aya-assist/model/`.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Copyright (c) 2026 Cohere
+This project uses Tiny Aya via aya-cli by Cohere Labs:
+https://cohere.com/blog/cohere-labs-tiny-aya
+https://github.com/Cohere-Labs/aya-cli
